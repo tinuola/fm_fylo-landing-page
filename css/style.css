@@ -1,16 +1,37 @@
 :root {
-  
+  --primary-blue: hsl(243, 87%, 12%);
+  --secondary-blue: hsl(238, 22%, 44%);
+  --accent-blue: hsl(224, 93%, 58%);
+  --accent-cyan: hsl(170, 45%, 43%);
+  --neutral-blue: hsl(240, 75%, 98%);
+  --neutral-gray: hsl(0, 0%, 75%);
+  --font-headings: 'Raleway', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
 }
 
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  font-family: var(--font-body);
+}
+
+/* Hidden elements for accessibility */
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   width: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  
+}
+
+.fm-attribution {
+  font-size: 11px;
+}
+
+.fm-attribution a {
+  color: hsl(228, 45%, 44%);
 }
