@@ -17,7 +17,9 @@
   <body>
     <div class="site-wrapper">
       <header>
-        <div class="site-logo"></div>
+        <div class="header-logo-wrapper">
+          <img src="/assets/images/logo.svg" alt="Fylo logo" class="header-logo">
+        </div>
         <nav>
           <ul>
             <li class="nav-item">Features</li>
@@ -28,30 +30,34 @@
       </header>
       <main>
         <h1 class="sr-only">Fylo Landing Page with Two-Column Layout - A Frontend Mentor Project</h1>
-        <section>
-          <div></div>
-          <div>
+        <section class="top-shelf">
+          <div class="top-shelf__img-wrapper">
+            <img src="/assets/images/illustration-1.svg" alt="Graphical image">
+          </div>
+          <div class="top-shelf__content-wrapper">
             <h2>All your files in one secure location, accessible anywhere.</h2>
             <p>Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
-            <div>
-              <input type="text">
+            <div class="top-shelf__cta-form">
+              <input type="text" placeholder="Enter your email.">
               <input type="button" value="Get Started">
             </div>
           </div>
         </section>
-        <section>
-          <div></div>
-          <div>
+        <section class="bottom-shelf">
+          <div class="bottom-shelf__img-wrapper">
+            <img src="/assets/images/illustration-2.svg" alt="Graphical image">
+          </div>
+          <div class="bottom-shelf__content-wrapper">
             <h2>Stay productive, wherever you are</h2>
             <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
             <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
             <p>See how Fylo works</p>
-            <div>
+            <div class="testimonial-card">
               <img src="assets/images/icon-quotes.svg" alt="Quotes icon">
               <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-              <div>
+              <div class="testimonial">
                 <img src="assets/images/avatar-testimonial.jpg" alt="Customer: Kyle Burton">
-                <div>
+                <div class="testimonial-byline">
                   <p>Kyle Burton</p>
                   <p>Founder & CEO, Huddle</p>
                 </div>
@@ -59,19 +65,20 @@
             </div>
           </div>
         </section>
-        <section>
-          <div>
+        <section class="newsletter">
             <h3>Get early access today</h3>
             <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-          </div>
-          <div>
+          <div class="newsletter__cta-form">
             <input type="text">
             <input type="button" value="Get Started For Free">
           </div>
         </section>
       </main>
       <footer>
-        <div class="primary-footer">
+        <div class="footer-logo-wrapper">
+          <img src="/assets/images/logo.svg" alt="Fylo logo" class="footer-logo">
+        </div>
+        <nav>
           <ul>
             <li>Phone: +1-543-123-4567</li>
             <li>example@fylo.com</li>
@@ -92,12 +99,14 @@
             <li></li>
             <li></li>
           </ul>
-        </div>
+        </nav>
+      </footer>
+      <section>
         <div class="fm-attribution-row">
           <p class="fm-attribution">Challenge by <a href="" target="_blank">Frontend Mentor</a></p>
           <p class="fm-attribution">Coded by <a href="" target="_blank">TechTinu</a></p>
         </div>
-      </footer>
+      </section>
     </div>
   </body>
 </html>
