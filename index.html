@@ -8,7 +8,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <!-- Project Stylesheets -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -16,21 +16,19 @@
   </head>
   <body>
     <div class="site-wrapper">
-      <header>
-        <div class="header-logo-wrapper">
-          <img src="/assets/images/logo.svg" alt="Fylo logo" class="header-logo">
-        </div>
+      <header class="inner-wrapper">
+        <img src="/assets/images/logo.svg" alt="Fylo logo" class="header-logo">
         <nav>
           <ul>
-            <li class="nav-item">Features</li>
-            <li class="nav-item">Team</li>
-            <li class="nav-item">Sign In</li>
+            <li>Features</li>
+            <li>Team</li>
+            <li>Sign In</li>
           </ul>
         </nav>
       </header>
       <main>
         <h1 class="sr-only">Fylo Landing Page with Two-Column Layout - A Frontend Mentor Project</h1>
-        <section class="top-shelf">
+        <section class="top-shelf inner-wrapper">
           <div class="top-shelf__img-wrapper">
             <img src="/assets/images/illustration-1.svg" alt="Graphical image">
           </div>
@@ -43,7 +41,8 @@
             </div>
           </div>
         </section>
-        <section class="bottom-shelf">
+
+        <section class="bottom-shelf inner-wrapper">
           <div class="bottom-shelf__img-wrapper">
             <img src="/assets/images/illustration-2.svg" alt="Graphical image">
           </div>
@@ -51,7 +50,7 @@
             <h2>Stay productive, wherever you are</h2>
             <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
             <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
-            <p>See how Fylo works</p>
+            <p class="cta">See how Fylo works</p>
             <div class="testimonial-card">
               <img src="assets/images/icon-quotes.svg" alt="Quotes icon">
               <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
@@ -65,7 +64,7 @@
             </div>
           </div>
         </section>
-        <section class="newsletter">
+        <section class="newsletter inner-wrapper">
             <h3>Get early access today</h3>
             <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
           <div class="newsletter__cta-form">
@@ -74,7 +73,7 @@
           </div>
         </section>
       </main>
-      <footer>
+      <footer class="inner-wrapper">
         <div class="footer-logo-wrapper">
           <img src="/assets/images/logo.svg" alt="Fylo logo" class="footer-logo">
         </div>
@@ -94,14 +93,14 @@
             <li>Terms</li>
             <li>Privacy</li>
           </ul>
-          <ul>
+          <!-- <ul>
             <li></li>
             <li></li>
             <li></li>
-          </ul>
+          </ul> -->
         </nav>
       </footer>
-      <section>
+      <section class="inner-wrapper">
         <div class="fm-attribution-row">
           <p class="fm-attribution">Challenge by <a href="" target="_blank">Frontend Mentor</a></p>
           <p class="fm-attribution">Coded by <a href="" target="_blank">TechTinu</a></p>
