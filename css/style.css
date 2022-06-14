@@ -175,6 +175,29 @@ header nav ul {
   margin-bottom: 1.5rem;
 }
 
+.cta {
+  border-bottom: 1px solid var(--accent-cyan);
+  margin: 2.5rem auto;
+  padding-bottom: 0.25rem;
+  width: 148px;
+}
+
+.cta > * {
+  color: var(--accent-cyan);
+}
+
+.cta a {
+  font-size: .875rem;
+  text-decoration: none;
+}
+
+.cta img {
+  display: inline-block;
+  margin-left: .25rem;
+  position: relative;
+  top: 3px;
+}
+
 .testimonial-card {
   background-color: #fff;
   padding: 1.5rem;
