@@ -39,8 +39,8 @@ body {
 }
 
 .inner-wrapper {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 
@@ -84,12 +84,12 @@ header nav ul {
 
 .top-shelf__content-wrapper h2 {
   font-family: var(--font-headings);
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   font-weight: 700;
 }
 
 .top-shelf__content-wrapper p {
-  font-size: 1.125rem;
+  font-size: 1.12rem;
 }
 
 .top-shelf__cta-form input {
