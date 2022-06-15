@@ -10,7 +10,6 @@
 }
 
 body {
-  background-color: var(--primary-blue);
   min-height: 100vh;
   font-family: var(--font-body);
   font-weight: 300;
@@ -143,20 +142,9 @@ header nav ul {
   padding-bottom: 6rem;
 }
 
-/* @media (min-width: 900px){
-  .bottom-shelf {
-    background-image: url('/assets/images/bg-curve-desktop.svg');
-  }
-} */
-
 .bottom-shelf__img-wrapper {
   margin-bottom: 8rem;
 }
-
-/* .bottom-shelf__img-wrapper img {
-  width: 350px;
-  margin: 0 auto;
-} */
 
 .bottom-shelf__content-wrapper h2 {
   text-align: center;
@@ -164,11 +152,6 @@ header nav ul {
   font-family: var(--font-headings);
   font-weight: 700;
   color: var(--primary-blue);
-}
-
-.bottom-shelf__content-wrapper p {
-  /* color: var(--neutral-gray); */
-  /* font-size: .875rem; */
 }
 
 .bottom-shelf__content-wrapper > * {
@@ -184,6 +167,10 @@ header nav ul {
 
 .cta > * {
   color: var(--accent-cyan);
+}
+
+.cta >*:hover {
+  opacity: .75;
 }
 
 .cta a {
@@ -305,27 +292,63 @@ footer {
   color: var(--neutral-blue);
 }
 
-.footer-logo-wrapper {}
+.footer-logo-wrapper {
+  margin-bottom: 2rem;
+}
 
-.footer-logo {
+/* .footer-logo {
   width: 200px;
   -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(345deg) brightness(100%) contrast(104%);
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(345deg) brightness(100%) contrast(104%);
-}
+} */
 
 footer nav ul {
   font-size: .875rem;
-  /* margin-bottom: 2rem; */
+  font-weight: 400;
+  margin-bottom: 3rem;
 }
 
 footer nav ul li {
   margin-bottom: 1rem;
 }
 
+li img {
+  display: inline-block;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 120px;
+}
+
+.social-item {
+  align-items: center;
+  border: 1px solid var(--neutral-blue);
+  border-radius: 50%;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  padding: .5rem;
+  width: 30px;
+}
+
+.fm-attribution-row {
+  background-color: var(--primary-blue);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
 .fm-attribution {
-  font-size: 11px;
+  font-size: .75rem;
+  color: var(--neutral-blue);
+  letter-spacing: 1px;
 }
 
 .fm-attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--neutral-blue);
 }
