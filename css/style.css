@@ -247,7 +247,6 @@ header nav ul {
   display: block;
   width: 75%;
   margin: 0 auto 1rem auto;
-  /* margin-bottom: 1rem; */
   padding: 1rem 2rem;
   font-family: var(--font-headings);
   font-size: 1rem;
@@ -285,6 +284,11 @@ header nav ul {
   color: #fff;
 }
 
+.top-shelf__cta-form input:nth-child(2):hover,
+.newsletter__cta-form input:nth-child(2):hover {
+  background-color: hsla(224, 93%, 58%, .55);
+}
+
 footer {
   background-color: var(--primary-blue);
   padding-top: 2rem;
@@ -310,6 +314,10 @@ footer nav ul {
 
 footer nav ul li {
   margin-bottom: 1rem;
+}
+
+footer nav ul li:hover {
+  color: var(--accent-blue);
 }
 
 li img {
