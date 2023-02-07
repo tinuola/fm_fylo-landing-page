@@ -44,7 +44,8 @@ body {
   padding-right: 2rem;
 }
 
-@media(min-width: 991px){
+/* @media(min-width: 991px){ */
+@media(min-width: 900px){
   .inner-wrapper {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -73,9 +74,12 @@ header nav ul {
   margin-bottom: 8rem;
 }
 
-@media(min-width: 991px){
-  .top-shelf {
+/* @media(min-width: 991px){ */
+@media(min-width: 900px){
+  .top-shelf, .bottom-shelf {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -83,9 +87,10 @@ header nav ul {
   margin-bottom: 3rem;
 }
 
-@media(min-width: 991px){
+/* @media(min-width: 991px){ */
+@media(min-width: 900px){
   .top-shelf__img-wrapper {
-    flex-basis: 85%;
+    flex-basis: 50%;
     order: 2;
   }
 }
@@ -96,9 +101,16 @@ header nav ul {
   margin: 0 auto;
 }
 
-@media(min-width: 991px){
+@media(min-width: 900px){
+  .top-shelf__img-wrapper img {
+    width: 100%;
+  }
+}
+
+/* @media(min-width: 991px){ */
+@media(min-width: 900px){
   .top-shelf__content-wrapper {
-    flex-basis: 95%;
+    flex-basis: 60%;
   }
 }
 
@@ -108,10 +120,11 @@ header nav ul {
   margin-bottom: 2rem;
 }
 
-@media(min-width: 991px){
+/* @media(min-width: 991px){ */
+@media(min-width: 900px){
   .top-shelf__content-wrapper > * {
     text-align: left;
-    max-width: 500px;
+    max-width: 575px;
   }
 }
 
@@ -121,9 +134,11 @@ header nav ul {
   font-weight: 700;
 }
 
-@media(min-width: 991px){
+/* @media(min-width: 991px){ */
+@media(min-width: 900px){
   .top-shelf__content-wrapper h2 {
     font-size: 2rem;
+    max-width: 500px;
   }
 }
 
@@ -178,17 +193,19 @@ header nav ul {
   }
 
   .top-shelf__cta-form input:nth-child(1){
-    width: 50%;
+    /* width: 50%; */
+    width: 100%;
   }
 
   .top-shelf__cta-form input:nth-child(2){
-    width: 30%;
+    /* width: 30%; */
+    width: 100%;
   }
 }
 
-@media (min-width: 991px){
+@media (min-width: 1024px){
   .top-shelf__cta-form input:nth-child(1){
-    width: 60%;
+    width: 55%;
   }
 
   .top-shelf__cta-form input:nth-child(2){
@@ -207,6 +224,26 @@ header nav ul {
 
 .bottom-shelf__img-wrapper {
   margin-bottom: 8rem;
+}
+
+@media(min-width: 900px){
+  .bottom-shelf__img-wrapper {
+    flex-basis: 45%;
+    order: 2;
+  }
+}
+
+@media(min-width: 900px){
+  .bottom-shelf__img-wrapper img {
+    width: 100%;
+  }
+}
+
+/* @media(min-width: 991px){ */
+@media(min-width: 900px){
+  .bottom-shelf__content-wrapper {
+    flex-basis: 50%;
+  }
 }
 
 .bottom-shelf__content-wrapper h2 {
@@ -232,7 +269,7 @@ header nav ul {
   color: var(--accent-cyan);
 }
 
-.cta >*:hover {
+.cta > *:hover {
   opacity: .75;
 }
 
@@ -406,6 +443,10 @@ li img {
   padding: .5rem;
   width: 30px;
 }
+
+.social-item:hover {
+  border: 1px solid var(--accent-blue);
+} 
 
 .fm-attribution-row {
   background-color: var(--primary-blue);
