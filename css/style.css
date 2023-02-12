@@ -57,6 +57,12 @@ header {
   margin-bottom: 8rem;
 }
 
+@media(min-width: 1024px){
+  header {
+    margin-bottom: 6rem;
+  }
+}
+
 .header-logo {
   width: 85px;
 }
@@ -106,31 +112,42 @@ header nav ul {
   }
 }
 
-.page-block__top .content-wrapper,
-.page-block__bottom .content-wrapper h2  {
+.page-block__top .content-wrapper {
   text-align: center;
 }
 
 @media(min-width: 768px){
-  .page-block__top .content-wrapper,
-  .page-block__bottom .content-wrapper h2  {
+  .page-block__top .content-wrapper  {
     text-align: left;
   }
 }
 
-.page-block__bottom .content-wrapper h2 {
-  width: 100%;
-}
-
 .content-wrapper h2,
 .content-wrapper > p {
-  margin: 0 auto 1.75rem;
+  margin: 0 auto 1.75rem auto;
+}
+
+.content-wrapper h2 {
+  font-family: var(--font-headings);
+  font-size: 1.65rem;
+  font-weight: 700;
+}
+
+.content-wrapper p {
+  font-size: .975rem;
 }
 
 @media(min-width: 376px){
   .content-wrapper h2,
   .content-wrapper > p {
-    max-width: 330px;
+    max-width: 335px;
+  }
+}
+
+@media(min-width: 500px){
+  .content-wrapper h2,
+  .content-wrapper > p {
+    max-width: 400px;
   }
 }
 
@@ -138,33 +155,26 @@ header nav ul {
   .content-wrapper h2,
   .content-wrapper > p {
     margin-left: 0;
+    margin-right: 0;
   }
 }
 
 @media (min-width: 900px){
-  .content-wrapper > p {
-    max-width: 490px;
-  }
-}
-
-content-wrapper h2 {
-  font-family: var(--font-headings);
-  font-size: 1.65rem;
-  font-weight: 700;
-}
-
-@media(min-width: 900px){
   .content-wrapper h2{
-    font-size: 2.25rem;
+    font-size: 1.85rem;
   }
+  
+  .content-wrapper h2,
+  .content-wrapper > p {
+    max-width: 500px;
+  }
+}
 
+@media(min-width: 1200px){
   .content-wrapper h2 {
+    font-size: 2.25rem;
     max-width: 575px;
   }
-}
-
-.content-wrapper p {
-  font-size: .975rem;
 }
 
 .email-form input {
@@ -196,20 +206,6 @@ content-wrapper h2 {
 
   .page-block__top .email-form input:nth-child(2) {
     width: 200px;
-  }
-}
-
-.page-block__newsletter .email-form input {
-  width: 315px;
-}
-
-@media(min-width: 768px){
-  .page-block__newsletter .email-form input:nth-child(1){
-    width: 90%;
-  }
-
-  .page-block__newsletter .email-form input:nth-child(2) {
-    max-width: 225px;
   }
 }
 
@@ -253,32 +249,6 @@ content-wrapper h2 {
   background-color: hsla(224, 93%, 58%, .85);
 }
 
-@media (min-width: 768px){
-  .cta-form input{
-    display: inline-block;
-  }
-
-  .cta-form input:nth-child(1){ 
-    /* width: 50%; */
-    /* width: 100%;*/
-  }
-
-  .cta-form input:nth-child(2){ 
-    /* width: 30%; */
-    /* width: 100%;*/
-  }
-} 
-
-@media (min-width: 1024px){
-  .cta-form input:nth-child(1){
-    width: 55%;
-  }
-
-  .cta-form input:nth-child(2){
-    width: 40%;
-  }
-}
-
 .page-block__bottom {
   background-image: url('../assets/images/bg-curve-mobile.svg');
   background-repeat: no-repeat;
@@ -289,12 +259,32 @@ content-wrapper h2 {
   padding-bottom: 6rem;
 }
 
+@media(min-width: 1024px){
+  .page-block__bottom {
+    margin-top: 6rem;
+  }
+}
+
 .page-block__bottom .content-wrapper h2 {
   font-size: 1.125rem;
   color: var(--primary-blue);
+  text-align: center;
+  width: 100%;
+}
+
+@media(min-width: 768px){
+  .page-block__bottom .content-wrapper h2  {
+    text-align: left;
+  }
 }
 
 @media(min-width: 900px){
+  .page-block__bottom .content-wrapper h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px){
   .page-block__bottom .content-wrapper h2 {
     font-size: 2rem;
   }
@@ -359,6 +349,12 @@ content-wrapper h2 {
   line-height: 1.6;
 }
 
+@media (min-width: 900px){
+  .testimonial-card p {
+    font-size: .85rem;
+  }
+}
+
 .testimonial-label {
   display: flex;
   align-items: center;
@@ -386,10 +382,6 @@ content-wrapper h2 {
   .page-block__newsletter {
     display: flex;
     text-align: left;
-  }
-
-  .page-block__newsletter .email-form {
-    flex-basis: 45%;
   }
 }
 
@@ -419,6 +411,24 @@ content-wrapper h2 {
 @media(min-width: 1024px){
   .page-block__newsletter p {
     max-width: 485px;
+  }
+}
+
+.page-block__newsletter .email-form input {
+  width: 315px;
+}
+
+@media(min-width: 768px){
+  .page-block__newsletter .email-form {
+    flex-basis: 45%;
+  }
+
+  .page-block__newsletter .email-form input:nth-child(1){
+    width: 90%;
+  }
+
+  .page-block__newsletter .email-form input:nth-child(2) {
+    max-width: 225px;
   }
 }
 
@@ -506,7 +516,7 @@ footer nav ul li img {
 
 @media (min-width: 768px){
   .fm-attribution-row {
-    text-align: left;
+    text-align: right;
   }
 }
 
