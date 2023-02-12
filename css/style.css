@@ -280,7 +280,7 @@ content-wrapper h2 {
 }
 
 .page-block__bottom {
-  background-image: url('./assets/images/bg-curve-mobile.svg');
+  background-image: url('../assets/images/bg-curve-mobile.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
